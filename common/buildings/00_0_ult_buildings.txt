@@ -1669,16 +1669,16 @@ building_ult_volatile_motes_synthesizer = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = no
 		}
-		planet_metallurgists_minerals_upkeep_add = 1.5
-		planet_artisans_minerals_upkeep_add = 1.5
+		planet_metallurgists_minerals_upkeep_add = 3
+		planet_artisans_minerals_upkeep_add = 3
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = yes
 		}
-		planet_metallurgists_food_upkeep_add = 3
-		planet_artisans_food_upkeep_add = 3
+		planet_metallurgists_food_upkeep_add = 4.5
+		planet_artisans_food_upkeep_add = 4.5
 	}
 
 	resources = {
@@ -1726,16 +1726,16 @@ building_ult_rare_crystals_synthesizer = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = no
 		}
-		planet_metallurgists_minerals_upkeep_add = 1.5
-		planet_artisans_minerals_upkeep_add = 1.5
+		planet_metallurgists_minerals_upkeep_add = 3
+		planet_artisans_minerals_upkeep_add = 3
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = yes
 		}
-		planet_metallurgists_food_upkeep_add = 3
-		planet_artisans_food_upkeep_add = 3
+		planet_metallurgists_food_upkeep_add = 4.5
+		planet_artisans_food_upkeep_add = 4.5
 	}
 
 	resources = {
@@ -1783,16 +1783,16 @@ building_ult_exotic_gases_synthesizer = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = no
 		}
-		planet_metallurgists_minerals_upkeep_add = 1.5
-		planet_artisans_minerals_upkeep_add = 1.5
+		planet_metallurgists_minerals_upkeep_add = 3
+		planet_artisans_minerals_upkeep_add = 3
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = yes
 		}
-		planet_metallurgists_food_upkeep_add = 3
-		planet_artisans_food_upkeep_add = 3
+		planet_metallurgists_food_upkeep_add = 4.5
+		planet_artisans_food_upkeep_add = 4.5
 	}
 
 	resources = {
@@ -1834,7 +1834,8 @@ building_ult_living_metal_synthesizer = {
 	}
 	
 	planet_modifier = {
-		industrial_jobs_sr_living_metal_produces_add = 0.1
+		planet_metallurgists_sr_living_metal_produces_add = 0.1
+		planet_artisans_sr_living_metal_produces_add = 0.1
 	}
 
 	triggered_planet_modifier = {
@@ -1849,8 +1850,9 @@ building_ult_living_metal_synthesizer = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = yes
 		}
-		planet_metallurgists_food_upkeep_add = 6
-		planet_artisans_food_upkeep_add = 6
+		industrial_jobs_sr_living_metal_produces_add = 0.1
+		planet_metallurgists_food_upkeep_add = 4.5
+		planet_artisans_food_upkeep_add = 4.5
 	}
 
 	resources = {
@@ -1896,7 +1898,8 @@ building_ult_zro_synthesizer = {
 	}
 	
 	planet_modifier = {
-		industrial_jobs_sr_zro_produces_add = 0.1
+		planet_metallurgists_sr_zro_produces_add = 0.1
+		planet_artisans_sr_zro_produces_add = 0.1
 	}
 
 	triggered_planet_modifier = {
@@ -1911,8 +1914,8 @@ building_ult_zro_synthesizer = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = yes
 		}
-		planet_metallurgists_food_upkeep_add = 6
-		planet_artisans_food_upkeep_add = 6
+		planet_metallurgists_food_upkeep_add = 4.5
+		planet_artisans_food_upkeep_add = 4.5
 	}
 
 	resources = {
@@ -1942,11 +1945,14 @@ building_ult_dark_matter_collector = {
 	base_buildtime = @b5_time
 	planet_limit = 1
 
-	category = resource
+	category = manufacturing
 
 	exempt_from_ai_planet_specialization = no
 	
 	building_sets = {
+		industrial
+		factory
+		foundry
 		generator
 	}
 	
@@ -1955,7 +1961,12 @@ building_ult_dark_matter_collector = {
 	}
 	
 	planet_modifier = {
-		technician_jobs_sr_dark_matter_add = 0.1
+		planet_metallurgists_sr_dark_matter_produces_add = 0.1
+		planet_metallurgists_energy_upkeep_add = 3
+		planet_artisans_sr_dark_matter_produces_add = 0.1
+		planet_artisans_energy_upkeep_add = 3
+		planet_technician_sr_dark_matter_produces_add = 0.4
+		planet_technician_energy_upkeep_add = 6		
 	}
 
 	resources = {
@@ -1969,10 +1980,6 @@ building_ult_dark_matter_collector = {
 		}
 	}
 	
-	triggered_planet_modifier = {
-		technician_jobs_energy_upkeep_add = 6
-	}
-
 	prerequisites = {
 		"tech_ult_strategic_resources_production"
 	}
@@ -2004,23 +2011,24 @@ building_ult_nanites_synthesizer = {
 	}
 	
 	planet_modifier = {
-		industrial_jobs_nanites_produces_add = 0.1
+		planet_metallurgists_nanites_produces_add = 0.1
+		planet_artisans_nanites_produces_add = 0.1
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = no
 		}
-		planet_metallurgists_minerals_upkeep_add = 1.5
-		planet_artisans_minerals_upkeep_add = 1.5
+		planet_metallurgists_minerals_upkeep_add = 3
+		planet_artisans_minerals_upkeep_add = 3
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = yes
 		}
-		planet_metallurgists_food_upkeep_add = 1.5
-		planet_artisans_food_upkeep_add = 1.5
+		planet_metallurgists_food_upkeep_add = 4.5
+		planet_artisans_food_upkeep_add = 4.5
 	}
 
 	resources = {

@@ -1,3 +1,15 @@
+### Unique Features outside of UT
+- UT jobs now inherits others base jobs modifiers 
+Example : Nutritionists are considered being a farmer, a researcher AND an artisan for bonus production and upkeep
+
+- UT jobs should trigger auto-modding correctly for the main ressources (trade value for product designers)
+NB: Will probably give the info and fixe to @breloom1994 to incorparate back in the main mod after further testing 
+
+- UT Advanced ressource buildings no longuer provide passive ressources, they provide modifiers for base industry jobs instead (the same as base Stellaris with a x3 factors)
+
+- UT Starbase modules are now balanced around dark matter upkeep making it a MUST HAVE
+
+### Just Nerf
 ##General
 Most country or planet modifiers have been heavily nerfed by a factor 2 minimum from ANY sources
 (Mostly Research, Buildings, Edicts)
@@ -19,15 +31,14 @@ Build time and basic ressource upkeep are overall increased
 Now produces ressources and jobs are now all aligned to FE buildings (except jobs for modifiers buildings)
 
 #Advanced ressource building (motes, exotic, crystals, zro, living metal, nanites)
-Now are dedicated for industries districts
 Now limited to only one per planet
 Doesn't produce ressource anymore
-Change industrialist jobs to produce the advanced ressource in exchange of an increased upkeep (more for motes, exotic and crystals)
+Change industrialist jobs to produce the advanced ressource in exchange of an increased upkeep (the same as base Stellaris)
 Minerals cost increase, introducing an energy cost, no change to upkeep
 No rare ressource upkeep (as original mod)
 
 # Advanced ressource building for dark matter
-Same as above but now is dedicated for generator district with an high energy upkeep and modify technician jobs instead
+Same as above but now is dedicated for generator and industries districts with an high energy upkeep for both the building, technicians and industries jobs
 
 ## Decisions / Deposits
 Major decisions now cost additional alloys
@@ -39,3 +50,23 @@ Housing and amnities has been reduced by 1/5
 
 ## Terraforming
 Terraforming out of molten and toxic world cost 4 times more
+
+## Jobs
+Job ressource production and upkeep are reduced by 1/3
+
+### Current TODO
+## Testing
+Regular empire -> OK
+Catalyst civic -> OK
+Agrarian idyll civic -> Pending
+Both Gestalt empires -> Pending
+Slave world -> Pending
+Resort world -> Pending
+
+## Evolution
+New UT base ressource jobs should be flagged as worker strata and be available for slaves benifits
+(currently bugged if you I just flag those jobs to this strata) -> ETA a few days ? 
+
+Looking for the ACOT code bases to search a clear path to integrate both mods together -> ETA a few days ? 
+
+Actually merging with ACOT -> ETA 2 weeks ? Maybe optimistic 

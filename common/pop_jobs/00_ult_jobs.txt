@@ -1,5 +1,5 @@
 ###################
-# Specialist Jobs
+# Worker Jobs
 ###################
 
 ult_dark_energy_field_operator = {
@@ -31,10 +31,10 @@ ult_dark_energy_field_operator = {
 	}
 	
 	resources = {
-		category = planet_jobs
+		category = planet_ult_dark_energy_field_operators
 		produces = {
-			energy = 30
-			physics_research = 3
+			energy = 20
+			physics_research = 2
 			sr_dark_matter = 0.1
 		}
 	}	
@@ -45,6 +45,19 @@ ult_dark_energy_field_operator = {
 			pop_amount_change_category = {
 				CATEGORY = specialist
 				AMOUNT = local_pop_amount
+			}
+		}
+	}
+	
+	inline_script = "jobs/automodding_priority_energy"
+	
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			exists = planet
+			planet = {
+				has_available_jobs = ult_dark_energy_field_operator
 			}
 		}
 	}
@@ -72,10 +85,10 @@ ult_mining_drone_operator = {
 	possible_precalc = can_fill_specialist_job
 
 	resources = {
-		category = planet_jobs
+		category = planet_ult_mining_drone_operators
 		produces = {
-			minerals = 30
-			engineering_research = 3
+			minerals = 20
+			engineering_research = 2
 		}
 	}	
 
@@ -89,6 +102,19 @@ ult_mining_drone_operator = {
 			pop_amount_change_category = {
 				CATEGORY = specialist
 				AMOUNT = local_pop_amount
+			}
+		}
+	}
+	
+	inline_script = "jobs/automodding_priority_minerals"
+	
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			exists = planet
+			planet = {
+				has_available_jobs = ult_mining_drone_operator
 			}
 		}
 	}
@@ -121,10 +147,10 @@ ult_nutritionist = {
 	}
 	
 	resources = {
-		category = planet_jobs
+		category = planet_ult_nutritionists
 		produces = {
-			food = 25
-			consumer_goods = 5
+			food = 17
+			consumer_goods = 4
 		}
 	}	
 
@@ -150,9 +176,24 @@ ult_nutritionist = {
 			}
 		}
 	}
+	
+	inline_script = "jobs/automodding_priority_food"
+	
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			exists = planet
+			planet = {
+				has_available_jobs = ult_nutritionist
+			}
+		}
+	}
 }
 
-
+###################
+# Specialist Jobs
+###################
 ult_atomic_assembler = {
 	category = specialist
 
@@ -175,14 +216,14 @@ ult_atomic_assembler = {
 	possible_precalc = can_fill_specialist_job
 	
 	resources = {
-		category = planet_jobs
+		category = planet_ult_atomic_assemblers
 		produces = {
-			alloys = 15
-			engineering_research = 3
+			alloys = 10
+			engineering_research = 2
 			sr_living_metal = 0.05
 		}
 		upkeep = {
-			minerals = 30
+			minerals = 20
 		}
 	}
 	
@@ -192,6 +233,19 @@ ult_atomic_assembler = {
 			pop_amount_change_category = {
 				CATEGORY = specialist
 				AMOUNT = local_pop_amount
+			}
+		}
+	}
+	
+	inline_script = "jobs/automodding_priority_alloys"
+	
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			exists = planet
+			planet = {
+				has_available_jobs = ult_atomic_assembler
 			}
 		}
 	}
@@ -219,9 +273,9 @@ ult_ecologist = {
 	possible_precalc = can_fill_specialist_job
 	
 	resources = {
-		category = planet_jobs
+		category = planet_ult_ecologists
 		produces = {
-			society_research = 25
+			society_research = 17
 		}
 	}
 	
@@ -236,6 +290,19 @@ ult_ecologist = {
 			pop_amount_change_category = {
 				CATEGORY = specialist
 				AMOUNT = local_pop_amount
+			}
+		}
+	}
+	
+	inline_script = "jobs/automodding_priority_research"
+	
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			exists = planet
+			planet = {
+				has_available_jobs = ult_ecologist
 			}
 		}
 	}
@@ -265,7 +332,7 @@ ult_product_designer = {
 	possible_precalc = can_fill_specialist_job
 
 	resources = {
-		category = planet_jobs
+		category = planet_ult_product_designers
 		produces = {
 			unity = 5
 			trade = 5
@@ -281,6 +348,19 @@ ult_product_designer = {
 			pop_amount_change_category = {
 				CATEGORY = specialist
 				AMOUNT = local_pop_amount
+			}
+		}
+	}
+	
+	inline_script = "jobs/automodding_priority_trade"
+	
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			exists = planet
+			planet = {
+				has_available_jobs = ult_product_designer
 			}
 		}
 	}
