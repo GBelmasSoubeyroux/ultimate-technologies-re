@@ -1,0 +1,287 @@
+###################
+# Specialist Jobs
+###################
+
+ult_dark_energy_field_operator = {
+	category = specialist
+	
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ult_dark_energy_nexus
+		}
+	}
+	
+	tags = { energy research strategic_resource }
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			energy = 30
+			physics_research = 3
+			sr_dark_matter = 0.1
+		}
+	}	
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+ult_mining_drone_operator = {	
+	category = specialist
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ult_mining_drone_factory
+		}
+	}
+
+	tags = { minerals research amenities }
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			minerals = 30
+			engineering_research = 3
+		}
+	}	
+
+	planet_modifier = {
+		planet_amenities_add = 200
+	}
+	
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+
+ult_nutritionist = {
+	category = specialist
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ult_edenization
+		}
+	}
+
+	tags = { food consumer_goods amenities }
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	
+	planet_modifier = {
+		logistic_growth_mult = 0.01
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			food = 25
+			consumer_goods = 5
+		}
+	}	
+
+	planet_modifier = {
+		planet_amenities_add = 200
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		modifier = {
+			planet_amenities_add = 200
+		}
+	}	
+	
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+
+ult_atomic_assembler = {
+	category = specialist
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ult_industrial_atomic_assembler
+		}
+	}
+
+	tags = { alloys research strategic_resource }
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			alloys = 15
+			engineering_research = 3
+			sr_living_metal = 0.05
+		}
+		upkeep = {
+			minerals = 30
+		}
+	}
+	
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+ult_ecologist = {	
+	category = specialist
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ult_ecological_station
+		}
+	}
+
+	tags = { research amenities habitability }
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			society_research = 25
+		}
+	}
+	
+	planet_modifier = {
+		planet_amenities_add = 200
+		pop_environment_tolerance = 0.05
+	}
+		
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+
+
+ult_product_designer = {
+	category = specialist
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ult_commercial_center
+		}
+	}
+
+	tags = { trade unity }
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			unity = 5
+			trade = 5
+		}
+		upkeep = {
+			consumer_goods = 0.5
+		}
+	}
+	
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}

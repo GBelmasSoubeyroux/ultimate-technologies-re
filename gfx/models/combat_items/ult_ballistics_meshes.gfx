@@ -1,0 +1,24 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "singularity_accelerator_tracer_round_mesh"
+		file = "gfx/models/combat_items/adv_kinetic_artillery_tracer_round.mesh"
+		scale = 2.0
+		
+		meshsettings = {
+		texture_diffuse = "singularity_accelerator_tracer_round.dds"
+		}	
+	}
+	
+	pdxmesh = {
+		name = "phase_railgun_tracer_round_mesh"
+		file = "gfx/models/combat_items/adv_kinetic_artillery_tracer_round.mesh"
+		scale = 2.0
+		
+		meshsettings = {
+		texture_diffuse = "phase_railgun_tracer_round.dds"
+		}
+	}
+	
+	
+}	

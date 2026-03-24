@@ -1,0 +1,100 @@
+# Planet District Zones
+#
+# Documentation: ./99_HOW_TO_ZONE.txt
+
+# TODO_CD: change to real slots
+
+
+slot_ult_automatic_mining = {
+	included_zone_sets = {
+		ult_minerals
+	}
+	
+	unlock = { # planet scope
+		always = yes
+	}
+}
+
+slot_ult_dark_energy = {
+	included_zone_sets = {
+		ult_energy
+	}
+	
+	unlock = { # planet scope
+		always = yes
+	}
+}
+
+slot_ult_nano_garden = {
+	included_zone_sets = {
+		ult_food
+	}
+	
+	unlock = { # planet scope
+		always = yes
+	}
+}
+
+
+##Ringworld
+slot_ult_rw_arcology_01 = {
+	included_zone_sets = {
+		ult_ring_world_arm
+	}
+
+	unlock = { # planet scope
+		uses_district_set = ring_world
+	}
+}
+
+slot_ult_rw_arcology_02 = {
+	included_zone_sets = {
+		ult_ring_world_arm
+	}
+
+	unlock = { # planet scope
+		uses_district_set = ring_world
+	}
+}
+
+slot_ult_rw_arcology_03 = {
+	included_zone_sets = {
+		ult_ring_world_arm
+	}
+
+	unlock = { # planet scope
+		uses_district_set = ring_world
+	}
+}
+
+##Arcology
+slot_ult_ecu_arcology_01 = {
+	included_zone_sets = {
+		ult_arcology_arm
+	}
+
+	unlock = { # planet scope
+		uses_district_set = city_world
+	}
+}
+
+slot_ult_ecu_arcology_02 = {
+	included_zone_sets = {
+		ult_arcology_arm
+	}
+
+	unlock = { # planet scope
+		uses_district_set = city_world
+	}
+}
+
+slot_ult_ecu_arcology_03 = {
+	included_zone_sets = {
+		ult_arcology_arm
+	}
+
+	unlock = { # planet scope
+		uses_district_set = city_world
+	}
+}
+

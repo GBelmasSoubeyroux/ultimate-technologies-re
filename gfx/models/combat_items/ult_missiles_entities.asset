@@ -1,0 +1,180 @@
+@missile_scale = 1.0
+
+# MISSILES
+
+
+entity = {
+	name = "void_phase_missile_energy_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		start_event = { time = 0 node = exhaust particle = "void_phase_missile_energy_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_energy_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "void_phase_missile_energy_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_energy_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "void_phase_missile_energy_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_energy_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "void_phase_missile_energy_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_energy_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "void_phase_missile_energy_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_energy_idle_flame_particle" keep_particle = yes }
+	}
+	scale = 2
+}
+
+entity = {
+	name = "void_phase_missile_kinetic_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		start_event = { time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "void_phase_missile_kinetic_idle_flame_particle" keep_particle = yes }
+	}
+	scale = 2
+}
+
+
+entity = {
+	name = "void_phase_missile_energy_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "void_phase_missile_energy_hit_effect" sound = { soundeffect = missile_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_missile_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+
+entity = {
+	name = "void_phase_missile_energy_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "void_phase_missile_energy_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "void_phase_missile_energy_muzzle_flash_entity"
+	cull_radius = 0.01
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.8 looping = no
+		event = { time = 0 particle = "blue_laser_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = missile_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_missile_fire" } }
+	}
+}
+
+entity = {
+	name = "void_phase_missile_kinetic_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "void_phase_missile_kinetic_hit_effect" sound = { soundeffect = missile_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_missile_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+
+entity = {
+	name = "void_phase_missile_kinetic_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "void_phase_missile_kinetic_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { time = 0.0 particle = "projectile_large_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "void_phase_missile_kinetic_muzzle_flash_entity"
+	cull_radius = 0.01
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.8 looping = no
+		event = { time = 0 particle = "blue_laser_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = missile_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_missile_fire" } }
+	}
+}
+
