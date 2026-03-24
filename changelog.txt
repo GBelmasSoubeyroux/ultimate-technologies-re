@@ -1,13 +1,23 @@
-### Unique Features outside of UT
-- UT jobs now inherits others base jobs modifiers 
-Example : Nutritionists are considered being a farmer, a researcher AND an artisan for bonus production and upkeep
+### Disclaimer
+All credits for the original mod goes to @breloom1994 https://steamcommunity.com/sharedfiles/filedetails/?id=924990631
+Dependency to the original mod will be maintained for credits
 
-- UT jobs should trigger auto-modding correctly for the main ressources (trade value for product designers)
-NB: Will probably give the info and fixe to @breloom1994 to incorparate back in the main mod after further testing 
+### New Features
+- UT jobs now inherits others base jobs modifiers 
+Example : Nutritionists are considered as a farmer, a researcher AND an artisan for bonus production and upkeep
 
 - UT Advanced ressource buildings no longuer provide passive ressources, they provide modifiers for base industry jobs instead (the same as base Stellaris with a x3 factors)
 
-- UT Starbase modules are now balanced around dark matter upkeep making it a MUST HAVE
+- UT Starbase modules are now balanced around dark matter upkeep making it a MUST HAVE advanced ressources
+
+- Lot of nerfes and a few bugfixes
+
+### UT Bugfixes
+NB: Will probably give the info and fixe to @breloom1994 to incorparate back in the main mod after further testing 
+
+- UT jobs should trigger auto-modding correctly for the main ressources (arbitrary choice : trade value for product designers)
+
+- Utopian infrastructure for Gestalts only : Unity jobs are fixed to 400 instead of 10 (probably an artifact from 3.X)
 
 ### Just Nerf
 ##General
@@ -45,7 +55,6 @@ Major decisions now cost additional alloys
 Utopian infrastructure max district 5 -> 3
 
 Utopian infrastructure for Gestalts only :
-Unity jobs are fixed to 400 instead of 10 (probably a bug in original mod)
 Housing and amnities has been reduced by 1/5
 
 ## Terraforming
@@ -54,19 +63,27 @@ Terraforming out of molten and toxic world cost 4 times more
 ## Jobs
 Job ressource production and upkeep are reduced by 1/3
 
-### Current TODO
-## Testing
+### Mod order
+This mod requires Ultimate Technologies and is to be placed after it.
+
+### Testing
 Regular empire -> OK
 Catalyst civic -> OK
 Agrarian idyll civic -> Pending
 Both Gestalt empires -> Pending
-Slave world -> Pending
+Authoritarian/Slave empire + Slave world -> Pending
 Resort world -> Pending
 
-## Evolution
-New UT base ressource jobs should be flagged as worker strata and be available for slaves benifits
-(currently bugged if you I just flag those jobs to this strata) -> ETA a few days ? 
+## Roadmap
+Finalize testing and fixing if any bug are found -> before 04/06/26 and will stay high in priority
 
-Looking for the ACOT code bases to search a clear path to integrate both mods together -> ETA a few days ? 
+Looking for housing and amneties balance for regular planets and ecus and providing a rebalance if needed -> before 04/12/26
 
-Actually merging with ACOT -> ETA 2 weeks ? Maybe optimistic 
+Looking for the ACOT code bases to search a clear path to integrate both mods together -> before 04/14/26 
+
+UT base ressource jobs should be flagged as worker strata and be available for more slaves benifits
+(currently bugged if I just flag those jobs to this strata) -> OPTIONAL/UNSURE depends on ACOT implementation
+
+END FOR THIS MOD
+
+Actually merging with ACOT in a separate mod that will include this one -> before 04/14/26...  Certainly optimistic 
