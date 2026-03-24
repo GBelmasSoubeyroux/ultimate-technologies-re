@@ -1,10 +1,13 @@
-version="3.0"
+version="0.1"
 tags={
 	"Economy"
 	"Technologies"
 	"Military"
 	"Graphics"
 }
-name="Ultimate Technologies"
+name="Ultimate Technologies Rebalanced"
+dependencies={
+	"Ultimate Technologies"
+}
 supported_version="v4.3.*"
-remote_file_id="924990631"
+remote_file_id="????"

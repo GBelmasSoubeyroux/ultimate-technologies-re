@@ -10,7 +10,7 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 500
+			energy = 2000
 		}
 	}
 	duration = 360
@@ -33,7 +33,7 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 500
+			energy = 2000
 		}
 	}
 	duration = 360

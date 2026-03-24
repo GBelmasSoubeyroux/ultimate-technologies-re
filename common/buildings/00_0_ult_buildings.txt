@@ -4,10 +4,10 @@
 
 ##################
 building_ult_ecological_station = {
-	base_buildtime = 240
+	base_buildtime = @b3_time
 	planet_limit = 1
 
-	category = amenity
+	category = pop_assembly
 
 	building_sets = {
 		research
@@ -32,10 +32,10 @@ building_ult_ecological_station = {
 	}
 		
 	planet_modifier = {
-		pop_environment_tolerance = 0.20
-		planet_jobs_food_produces_mult = 0.30
-		logistic_growth_mult = 0.20
-		biological_pop_happiness = 0.10
+		pop_environment_tolerance = 0.10
+		planet_jobs_food_produces_mult = 0.15
+		logistic_growth_mult = 0.10
+		biological_pop_happiness = 0.05
 	}
 
 	triggered_planet_modifier = {
@@ -44,7 +44,7 @@ building_ult_ecological_station = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_ult_ecologist_add = 300
+			job_ult_ecologist_add = @b2_jobs
 		}
 	}
 
@@ -54,17 +54,24 @@ building_ult_ecological_station = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_spawning_drone_add = 300
+			job_spawning_drone_add = @b2_jobs
 		}
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
+			minerals = @b3_minerals
+			exotic_gases = @b2_rare_cost
+		}		
+		produces = {
+			food = 40
+			society_research = @b5_upkeep
 		}
 		upkeep = {
-			energy = 5
+			energy = @b4_upkeep
+			food = @b5_upkeep
+			exotic_gases = @b1_upkeep
 		}
 	}	
 	
@@ -89,7 +96,7 @@ building_ult_ecological_station = {
 }
 
 building_ult_nano_garden_hub = {
-	base_buildtime = 360
+	base_buildtime = @b2_time
 
 	category = resource
 
@@ -116,8 +123,7 @@ building_ult_nano_garden_hub = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			planet_amenities_add = 500
-			job_ult_nutritionist_add = 600
+			job_ult_nutritionist_add = @fe_jobs
 		}
 	}
 
@@ -127,17 +133,22 @@ building_ult_nano_garden_hub = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_technician_drone_add = 800
+			job_technician_drone_add = @fe_jobs
 		}
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
-		}	
+			minerals = @b3_minerals
+			exotic_gases = @b1_rare_cost
+		}		
+		produces = {
+			food = 20
+		}
 		upkeep = {
-			energy = 3
+			energy = @b3_upkeep
+			exotic_gases = @b2_rare_upkeep
 		}
 	}	
 	
@@ -168,7 +179,7 @@ building_ult_nano_garden_hub = {
 
 ################################
 building_ult_dark_energy_nexus = {
-	base_buildtime = 360
+	base_buildtime = @b3_time
 	planet_limit = 1
 
 	category = resource
@@ -187,7 +198,7 @@ building_ult_dark_energy_nexus = {
 	}
 	
 	planet_modifier = {
-		planet_jobs_energy_produces_mult = 0.25
+		planet_jobs_energy_produces_mult = 0.10
 	}
 
 	triggered_planet_modifier = {
@@ -196,7 +207,7 @@ building_ult_dark_energy_nexus = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_ult_dark_energy_field_operator_add = 300
+			job_ult_dark_energy_field_operator_add = @b2_jobs
 		}
 	}
 
@@ -206,20 +217,23 @@ building_ult_dark_energy_nexus = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_technician_drone_add = 600
+			job_technician_drone_add = @fe_jobs
 		}
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = @b3_minerals
+			exotic_gases = @b2_rare_cost
 		}
 		produces = {
-			physics_research = 30
+			physics_research = @b5_upkeep
+			energy = 40
 		}	
 		upkeep = {
-			energy = 1
+			energy = @b4_upkeep
+			exotic_gases = @b1_upkeep
 		}
 	}	
 	
@@ -257,7 +271,7 @@ building_ult_dark_energy_nexus = {
 
 
 building_ult_dark_energy_grid = {
-	base_buildtime = 360
+	base_buildtime = @b2_time
 
 	category = resource
 
@@ -279,7 +293,7 @@ building_ult_dark_energy_grid = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_ult_dark_energy_field_operator_add = 600
+			job_ult_dark_energy_field_operator_add = @fe_jobs
 		}
 	}
 
@@ -289,17 +303,22 @@ building_ult_dark_energy_grid = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_technician_drone_add = 1200
+			job_technician_drone_add = @fe2_jobs
 		}
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
+			minerals = @b2_minerals
+			exotic_gases = @b1_rare_cost
+		}		
+		produces = {
+			energy = 20
 		}
 		upkeep = {
-			energy = 1
+			energy = @b3_upkeep
+			exotic_gases = @b2_rare_upkeep
 		}
 	}	
 	
@@ -329,7 +348,7 @@ building_ult_dark_energy_grid = {
 
 ##################
 building_ult_recycling_network = {
-	base_buildtime = 480
+	base_buildtime = @b3_time
 	planet_limit = 1
 
 	category = resource
@@ -348,8 +367,7 @@ building_ult_recycling_network = {
 	}
 		
 	planet_modifier = {
-		planet_jobs_minerals_produces_mult = 0.25
-		planet_amenities_add = 2000
+		planet_jobs_minerals_produces_mult = 0.10
 	}
 
 	triggered_planet_modifier = {
@@ -358,7 +376,7 @@ building_ult_recycling_network = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_ult_mining_drone_operator_add = 300
+			job_ult_mining_drone_operator_add = @b2_jobs
 		}
 	}
 
@@ -368,20 +386,26 @@ building_ult_recycling_network = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 600
+			job_mining_drone_add = @fe_jobs
 		}
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 800
+			minerals = @b3_minerals
+			volatile_motes = @b2_rare_cost
 		}
+		produces = {
+			engineering_research = @b5_upkeep
+			minerals = 40
+		}	
 		upkeep = {
-			energy = 5
+			energy = @b3_upkeep
+			volatile_motes = @b2_rare_upkeep
 		}
 	}
-	
+		
 	prerequisites = {
 		"tech_ult_molecular_manipulation"
 	}
@@ -409,7 +433,7 @@ building_ult_recycling_network = {
 
 
 building_ult_mining_drone_factory = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 
 	category = resource
 
@@ -432,7 +456,7 @@ building_ult_mining_drone_factory = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_ult_mining_drone_operator_add = 600
+			job_ult_mining_drone_operator_add = @fe_jobs
 		}
 	}
 
@@ -442,19 +466,25 @@ building_ult_mining_drone_factory = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 1200
+			job_mining_drone_add = @fe2_jobs
 		}
 	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 800
+			minerals = @b2_minerals
+			volatile_motes = @b1_rare_cost
+		}
+		produces = {
+			minerals = 20
 		}
 		upkeep = {
-			energy = 5
+			energy = @b3_upkeep
+			volatile_motes = @b2_rare_upkeep
 		}
-	}
+	}	
+	
 	
 	prerequisites = {
 		"tech_ult_molecular_manipulation"
@@ -484,7 +514,7 @@ building_ult_mining_drone_factory = {
 
 #################
 building_ult_slave_complex = {
-	base_buildtime = 180
+	base_buildtime = @b1_time
 
 	category = resource
 
@@ -501,7 +531,7 @@ building_ult_slave_complex = {
 	}
 	
 	planet_modifier = {
-		pop_slave_bonus_workforce_mult = 0.10
+		pop_slave_bonus_workforce_mult = 0.05
 		planet_housing_add = 800
 		job_farmer_add = 300
 		job_miner_add = 500
@@ -510,10 +540,11 @@ building_ult_slave_complex = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = @b4_minerals
 		}
 		upkeep = {
-			energy = 2
+			energy = @b3_upkeep
+			rare_crystals = @b2_rare_upkeep
 		}
 	}	
 	
@@ -529,8 +560,8 @@ building_ult_slave_complex = {
 
 ##################
 building_ult_industrial_atomic_assembler = {
-	base_buildtime = 360
-	base_cap_amount = 3
+	base_buildtime = @b4_time
+	planet_limit = 1
 
 	category = manufacturing
 
@@ -572,7 +603,7 @@ building_ult_industrial_atomic_assembler = {
 			}
 		}
 		modifier = {
-			job_ult_atomic_assembler_add = 200
+			job_ult_atomic_assembler_add = @b1_jobs
 			planet_jobs_alloys_produces_mult = 0.10
 		}
 	}
@@ -586,7 +617,7 @@ building_ult_industrial_atomic_assembler = {
 			}
 		}
 		modifier = {
-			job_catalytic_technician_add = 200
+			job_catalytic_technician_add = @b1_jobs
 			planet_metallurgists_alloys_produces_add = 2
 			planet_jobs_alloys_produces_mult = 0.10
 		}
@@ -595,11 +626,12 @@ building_ult_industrial_atomic_assembler = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-			volatile_motes = 200
+			minerals = @b4_minerals
+			volatile_motes = @b4_rare_cost
 		}
 		upkeep = {
-			energy = 10
+			energy = @b5_upkeep
+			volatile_motes = @b2_upkeep 
 		}
 	}
 	
@@ -633,8 +665,8 @@ building_ult_industrial_atomic_assembler = {
 
 ##################
 building_ult_civilian_atomic_assembler = {
-	base_buildtime = 360
-	planet_limit = 3
+	base_buildtime = @b4_time
+	planet_limit = 1
 
 	category = manufacturing
 
@@ -671,7 +703,7 @@ building_ult_civilian_atomic_assembler = {
 			}
 		}
 		modifier = {
-			job_artisan_add = 200
+			job_artisan_add = @b1_jobs
 			planet_artisans_consumer_goods_produces_add = 3
 			planet_jobs_consumer_goods_produces_mult = 0.10
 		}
@@ -681,11 +713,12 @@ building_ult_civilian_atomic_assembler = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-			rare_crystals = 200
+			minerals = @b4_minerals
+			rare_crystals = @b4_rare_cost
 		}	
 		upkeep = {
-			energy = 10
+			energy = @b5_upkeep
+			rare_crystals = @b2_upkeep
 		}
 	}	
 	
@@ -709,7 +742,7 @@ building_ult_civilian_atomic_assembler = {
 
 ##################
 building_ult_intelligent_lab = {
-	base_buildtime = 360
+	base_buildtime = @b3_time
 
 	category = research
 
@@ -735,9 +768,9 @@ building_ult_intelligent_lab = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_physicist_add = 400
-			job_biologist_add = 400
-			job_engineer_add = 400
+			job_physicist_add = @b2_jobs
+			job_biologist_add = @b2_jobs
+			job_engineer_add = @b2_jobs
 		}
 	}
 	
@@ -747,9 +780,9 @@ building_ult_intelligent_lab = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_physicist_add = 400
-			job_brain_drone_biologist_add = 400
-			job_brain_drone_engineer_add = 400
+			job_brain_drone_physicist_add = @b2_jobs
+			job_brain_drone_biologist_add = @b2_jobs
+			job_brain_drone_engineer_add = @b2_jobs
 		}
 	}
 	
@@ -759,20 +792,21 @@ building_ult_intelligent_lab = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {	
-			job_calculator_physicist_add = 400
-			job_calculator_biologist_add = 400
-			job_calculator_engineer_add = 400
+			job_calculator_physicist_add = @b2_jobs
+			job_calculator_biologist_add = @b2_jobs
+			job_calculator_engineer_add = @b2_jobs
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-			exotic_gases = 100
+			minerals = @b4_minerals
+			exotic_gases = @b4_rare_cost
 		}
 		upkeep = {
-			energy = 10
+			energy = @b5_upkeep
+			exotic_gases = @b2_upkeep
 		}
 	}
 	
@@ -811,7 +845,7 @@ building_ult_intelligent_lab = {
 
 ##################
 building_ult_library = {
-	base_buildtime = 720
+	base_buildtime = @b4_time
 	planet_limit = 1
 
 	category = research
@@ -852,17 +886,19 @@ building_ult_library = {
 			multiplier = owner.trigger:num_ascension_perks
 		}
 		cost = {
-			minerals = 2000
+			minerals = @b5_minerals
+			exotic_gases = @b4_rare_cost
 		}
 		upkeep = {
-			energy = 5
+			energy = @b5_upkeep
+			exotic_gases = @b2_upkeep
 		}
 	}
 	
 	planet_modifier = {
-		researcher_jobs_bonus_workforce_mult = 0.30
-		planet_jobs_unity_produces_mult = 0.20
-		job_culture_worker_add = 400
+		researcher_jobs_bonus_workforce_mult = 0.15
+		planet_jobs_unity_produces_mult = 0.10
+		job_culture_worker_add = @b2_jobs
 	}
 	
 	prerequisites = {
@@ -888,7 +924,7 @@ building_ult_library = {
 
 ##################
 building_ult_datacore = {
-	base_buildtime = 720
+	base_buildtime = @b4_time
 	planet_limit = 1
 
 	category = research
@@ -926,7 +962,9 @@ building_ult_datacore = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 2000
+			minerals = @b4_minerals
+			rare_crystals = @b3_rare_cost
+			exotic_gases = @b3_rare_cost
 		}
 		produces = {
 			trigger = { exists = owner }
@@ -934,13 +972,15 @@ building_ult_datacore = {
 			multiplier = owner.trigger:num_ascension_perks
 		}
 		upkeep = {
-			energy = 5
+			energy = @b5_upkeep
+			rare_crystals = @b2_upkeep
+			exotic_gases = @b2_upkeep
 		}
 	}
 	
 	planet_modifier = {
-		researcher_jobs_bonus_workforce_mult = 0.30
-		planet_jobs_unity_produces_mult = 0.20
+		researcher_jobs_bonus_workforce_mult = 0.15
+		planet_jobs_unity_produces_mult = 0.10
 	}
 	
 	triggered_planet_modifier = {
@@ -949,7 +989,7 @@ building_ult_datacore = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 400
+			job_synapse_drone_add = @b2_jobs
 		}
 	}
 	
@@ -959,7 +999,7 @@ building_ult_datacore = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {	
-			job_coordinator_add = 400
+			job_coordinator_add = @b2_jobs
 		}
 	}
 	
@@ -998,7 +1038,7 @@ building_ult_datacore = {
 
 #####################
 building_ult_commercial_center = {
-	base_buildtime = 240
+	base_buildtime = @b2_time
 
 	category = trade
 
@@ -1022,9 +1062,9 @@ building_ult_commercial_center = {
 	}
 	
 	planet_modifier = {
-		job_ult_product_designer_add = 200
-		job_trader_add = 600
-		job_entertainer_add = 100
+		job_ult_product_designer_add = @b1_jobs
+		job_trader_add = @b3_jobs
+		job_entertainer_add = @b0_jobs
 	}
 	
 	triggered_planet_modifier = {
@@ -1036,7 +1076,7 @@ building_ult_commercial_center = {
 			has_active_building = building_ult_industrial_atomic_assembler
 		}
 		modifier = {
-			job_ult_atomic_assembler_add = 100
+			job_ult_atomic_assembler_add = @b0_jobs
 		}
 	}
 	
@@ -1049,7 +1089,7 @@ building_ult_commercial_center = {
 			has_active_building = building_ult_industrial_atomic_assembler
 		}
 		modifier = {
-			job_catalytic_technician_add = 100
+			job_catalytic_technician_add = @b0_jobs
 		}
 	}
 	
@@ -1062,7 +1102,7 @@ building_ult_commercial_center = {
 			has_active_building = building_ult_civilian_atomic_assembler
 		}
 		modifier = {
-			job_artisan_add = 100
+			job_artisan_add = @b0_jobs
 		}
 	}
 	
@@ -1074,17 +1114,19 @@ building_ult_commercial_center = {
 			NOT = { has_active_building = building_ult_civilian_atomic_assembler }
 		}
 		modifier = {
-			job_ult_product_designer_add = 100
+			job_ult_product_designer_add = @b0_jobs
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = @b4_minerals
+			rare_crystals = @b3_rare_cost
 		}	
 		upkeep = {
-			energy = 5
+			energy = @b5_upkeep
+			rare_crystals = @b2_upkeep
 		}		
 	}
 	
@@ -1107,7 +1149,7 @@ building_ult_commercial_center = {
 
 ######################
 building_ult_planetary_terminal = {
-	base_buildtime = 180	
+	base_buildtime = @b3_time	
 	planet_limit = 1
 
 	category = trade
@@ -1136,22 +1178,24 @@ building_ult_planetary_terminal = {
 	}
 	
 	planet_modifier = {
-		planet_jobs_upkeep_mult = -0.25
-		pop_bonus_workforce_mult = 0.25
-		job_bureaucrat_add = 200
+		planet_jobs_upkeep_mult = -0.10
+		pop_bonus_workforce_mult = 0.10
+		job_bureaucrat_add = @b1_jobs
 	}
 	
 	country_modifier = {
-		country_resource_max_add = 20000
+		country_resource_max_add = 5000
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = @b4_minerals
+			rare_crystals = @b4_rare_cost
 		}
 		upkeep = {
-			energy = 5
+			energy = @b4_upkeep
+			rare_crystals = @b2_upkeep
 		}
 	}
 	
@@ -1166,7 +1210,7 @@ building_ult_planetary_terminal = {
 
 #######################
 building_ult_gestalt_terminal = {
-	base_buildtime = 180	
+	base_buildtime = @b3_time	
 	planet_limit = 1
 
 	category = manufacturing
@@ -1191,12 +1235,12 @@ building_ult_gestalt_terminal = {
 	}
 	
 	planet_modifier = {
-		planet_jobs_upkeep_mult = -0.20
-		pop_bonus_workforce_mult = 0.20
+		planet_jobs_upkeep_mult = -0.10
+		pop_bonus_workforce_mult = 0.10
 	}
 	
 	country_modifier = {
-		country_resource_max_add = 20000
+		country_resource_max_add = 5000
 	}
 	
 	triggered_planet_modifier = {
@@ -1205,7 +1249,7 @@ building_ult_gestalt_terminal = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 200
+			job_synapse_drone_add = @b1_jobs
 		}
 	}
 	
@@ -1215,20 +1259,22 @@ building_ult_gestalt_terminal = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {	
-			job_coordinator_add = 200
-		}
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 1000
-		}
-		upkeep = {
-			energy = 5
+			job_coordinator_add = @b1_jobs
 		}
 	}
 	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b4_minerals
+			rare_crystals = @b4_rare_cost
+		}
+		upkeep = {
+			energy = @b4_upkeep
+			rare_crystals = @b2_upkeep
+		}
+	}
+
 	prerequisites = {
 		"tech_ult_paradise_homeplanet"
 	}
@@ -1240,7 +1286,7 @@ building_ult_gestalt_terminal = {
 
 ######################
 building_ult_edenization = {
-	base_buildtime = 360
+	base_buildtime = @b3_time
 	planet_limit = 1
 
 	category = amenity
@@ -1261,24 +1307,26 @@ building_ult_edenization = {
 	}
 		
 	planet_modifier = {
-		planet_housing_add = 5000
-		planet_housing_mult = 0.25
-		planet_amenities_add = 5000
-		planet_amenities_mult = 0.25
-		pop_happiness = 0.20
+		planet_housing_add = 4000
+		planet_housing_mult = 0.10
+		planet_amenities_add = 4000
+		planet_amenities_mult = 0.10
+		pop_happiness = 0.10
 	}
 	
 	resources = {
 		category = planet_buildings
 		produces = {
-			unity = 50
+			unity = 20
 		}
 		cost = {
-			food = 1000
-			consumer_goods = 500
+			food = @b4_minerals
+			consumer_goods = @b2_minerals
+			rare_crystals = @b3_rare_cost
 		}
 		upkeep = {
-			energy = 5
+			energy = @b5_upkeep
+			rare_crystals = @b2_upkeep
 		}
 	}	
 	
@@ -1292,7 +1340,7 @@ building_ult_edenization = {
 }
 
 building_ult_maintenance_center = {
-	base_buildtime = 360
+	base_buildtime = @b3_time
 	planet_limit = 1
 
 	category = amenity
@@ -1312,20 +1360,26 @@ building_ult_maintenance_center = {
 	}
 		
 	planet_modifier = {
-		planet_housing_mult = 0.30
-		planet_amenities_add = 5000
-		planet_jobs_upkeep_mult = 0.1
-		planet_pop_assembly_mult = 0.20
+		planet_housing_add = 4000
+		planet_housing_mult = 0.10
+		planet_amenities_add = 4000
+		planet_jobs_upkeep_mult = 0.10
+		planet_pop_assembly_mult = 0.10
 	}
 	
 	resources = {
 		category = planet_buildings
+		produces = {
+			unity = 20
+		}
 		cost = {
-			minerals = 1000
+			food = @b4_minerals
+			consumer_goods = @b2_minerals
+			rare_crystals = @b3_rare_cost
 		}
 		upkeep = {
-			energy = 10
-			minerals = 5
+			energy = @b5_upkeep
+			rare_crystals = @b2_upkeep
 		}
 	}	
 	
@@ -1340,7 +1394,7 @@ building_ult_maintenance_center = {
 
 #######################
 building_ult_ultimate_fortress = {
-	base_buildtime = 360
+	base_buildtime = @b3_time
 	planet_limit = 1
 	planetary_ftl_inhibitor = yes
 
@@ -1373,7 +1427,7 @@ building_ult_ultimate_fortress = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_enforcer_add = 200
+			job_enforcer_add = @b1_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -1382,7 +1436,7 @@ building_ult_ultimate_fortress = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 200
+			job_patrol_drone_add = @b1_jobs
 		}
 	}
 	
@@ -1392,7 +1446,7 @@ building_ult_ultimate_fortress = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_soldier_add = 200
+			job_soldier_add = @b1_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -1408,13 +1462,15 @@ building_ult_ultimate_fortress = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			unity = 30
+			unity = 20
 		}
 		cost = {
-			minerals = 1000
+			minerals = @b3_minerals
+			volatile_motes = @b2_rare_cost
 		}			
 		upkeep = {
-			energy = 5
+			energy = @b4_upkeep
+			volatile_motes = @b1_upkeep
 		}
 	}
 	
@@ -1446,7 +1502,7 @@ building_ult_ultimate_fortress = {
 
 ##########################
 building_ult_gaia_shield = {
-	base_buildtime = 360	
+	base_buildtime = @b3_time	
 	planet_limit = 1
 
 	category = army
@@ -1457,7 +1513,7 @@ building_ult_gaia_shield = {
 	}
 	
 	planet_modifier = {
-		pop_environment_tolerance = 0.20
+		pop_environment_tolerance = 0.10
 		planet_stability_add = 5
 		planet_storm_devastation_mult = -0.5
 	}
@@ -1465,15 +1521,17 @@ building_ult_gaia_shield = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = @b3_minerals
+			rare_crystals = @b2_rare_cost
 		}		
 		produces = {
-			engineering_research = 50
-			physics_research = 50
-			unity = 20
+			engineering_research = 25
+			physics_research = 25
+			unity = 10
 		}	
 		upkeep = {
-			energy = 5
+			energy = @b4_upkeep
+			rare_crystals = @b1_upkeep
 		}
 	}
 
@@ -1517,7 +1575,7 @@ building_ult_gaia_shield = {
 ##################
 
 building_ult_diplomacy_intelligence = {
-	base_buildtime = 720
+	base_buildtime = @b4_time
 	planet_limit = 1
 
 	category = government
@@ -1547,27 +1605,28 @@ building_ult_diplomacy_intelligence = {
 	}
 	
 	planet_modifier = {
-		job_politician_add = 200
-		job_bureaucrat_add = 600
+		job_politician_add = @b1_jobs
+		job_bureaucrat_add = @fe_jobs
 	}
 
 	country_modifier = {
-		envoys_add = 4
-		diplo_weight_mult = 0.2
-		country_base_influence_produces_add = 1
-		intel_decryption_add = 10
-		espionage_operation_difficulty_add = -5
-		add_base_country_intel = 20
+		envoys_add = 2
+		diplo_weight_mult = 0.1
+		country_base_influence_produces_add = 0.5
+		intel_decryption_add = 3
+		espionage_operation_difficulty_add = -2
+		add_base_country_intel = 5
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-			rare_crystals = 500
+			minerals = @b5_minerals
+			rare_crystals = @5_rare_cost
 		}
 		upkeep = {
-			energy = 10
+			energy = @b5_upkeep
+			rare_crystals = @b5_rare_upkeep 
 		}
 	}
 
@@ -1584,13 +1643,17 @@ building_ult_diplomacy_intelligence = {
 #################
 
 building_ult_volatile_motes_synthesizer = {
-	base_buildtime = 720
+	base_buildtime = @b4_time
+	planet_limit = 1
 
 	category = manufacturing
 
+	exempt_from_ai_planet_specialization = no
+	
 	building_sets = {
-		mining
 		industrial
+		factory
+		foundry
 	}
 	
 	potential = {
@@ -1598,13 +1661,31 @@ building_ult_volatile_motes_synthesizer = {
 		NOT = { has_modifier = slave_colony }
 	}
 	
+	planet_modifier = {
+		industrial_jobs_exotic_gases_produces_add = 0.3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		planet_metallurgists_minerals_upkeep_add = 1.5
+		planet_artisans_minerals_upkeep_add = 1.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = yes
+		}
+		planet_metallurgists_food_upkeep_add = 3
+		planet_artisans_food_upkeep_add = 3
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-		}
-		produces = {
-			volatile_motes = 30
+			minerals = @b4_minerals
+			energy = @b3_minerals
 		}
 		upkeep = {
 			minerals = 30
@@ -1619,13 +1700,17 @@ building_ult_volatile_motes_synthesizer = {
 
 ##################
 building_ult_rare_crystals_synthesizer = {
-	base_buildtime = 720
+	base_buildtime = @b4_time
+	planet_limit = 1
 
 	category = manufacturing
 
+	exempt_from_ai_planet_specialization = no
+	
 	building_sets = {
-		mining
 		industrial
+		factory
+		foundry
 	}
 	
 	potential = {
@@ -1633,13 +1718,31 @@ building_ult_rare_crystals_synthesizer = {
 		NOT = { has_modifier = slave_colony }
 	}
 	
+	planet_modifier = {
+		industrial_jobs_rare_crystals_produces_add = 0.3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		planet_metallurgists_minerals_upkeep_add = 1.5
+		planet_artisans_minerals_upkeep_add = 1.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = yes
+		}
+		planet_metallurgists_food_upkeep_add = 3
+		planet_artisans_food_upkeep_add = 3
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-		}
-		produces = {
-			rare_crystals = 30
+			minerals = @b4_minerals
+			energy = @b3_minerals
 		}
 		upkeep = {
 			minerals = 30
@@ -1654,13 +1757,17 @@ building_ult_rare_crystals_synthesizer = {
 
 #########################
 building_ult_exotic_gases_synthesizer = {
-	base_buildtime = 720
+	base_buildtime = @b4_time
+	planet_limit = 1
 
 	category = manufacturing
 
+	exempt_from_ai_planet_specialization = no
+	
 	building_sets = {
-		mining
 		industrial
+		factory
+		foundry
 	}
 	
 	potential = {
@@ -1668,13 +1775,31 @@ building_ult_exotic_gases_synthesizer = {
 		NOT = { has_modifier = slave_colony }
 	}
 	
+	planet_modifier = {
+		industrial_jobs_exotic_gases_produces_add = 0.3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		planet_metallurgists_minerals_upkeep_add = 1.5
+		planet_artisans_minerals_upkeep_add = 1.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = yes
+		}
+		planet_metallurgists_food_upkeep_add = 3
+		planet_artisans_food_upkeep_add = 3
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-		}
-		produces = {
-			exotic_gases = 30
+			minerals = @b4_minerals
+			energy = @b3_minerals
 		}
 		upkeep = {
 			minerals = 30
@@ -1690,13 +1815,17 @@ building_ult_exotic_gases_synthesizer = {
 #######################
 
 building_ult_living_metal_synthesizer = {
-	base_buildtime = 720
+	base_buildtime = @b5_time
+	planet_limit = 1
 
 	category = manufacturing
 
+	exempt_from_ai_planet_specialization = no
+	
 	building_sets = {
-		mining
 		industrial
+		factory
+		foundry
 	}
 	
 	potential = {
@@ -1704,17 +1833,35 @@ building_ult_living_metal_synthesizer = {
 		NOT = { has_modifier = slave_colony }
 	}
 	
+	planet_modifier = {
+		industrial_jobs_sr_living_metal_produces_add = 0.1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		planet_metallurgists_minerals_upkeep_add = 3
+		planet_artisans_minerals_upkeep_add = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = yes
+		}
+		planet_metallurgists_food_upkeep_add = 6
+		planet_artisans_food_upkeep_add = 6
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-		}
-		produces = {
-			sr_living_metal = 5
+			minerals = @b4_minerals
+			energy = @b3_minerals
 		}
 		upkeep = {
-			minerals = 30
-			energy = 30
+			minerals = 50
+			energy = 50
 		}
 	}
 	
@@ -1730,13 +1877,17 @@ building_ult_living_metal_synthesizer = {
 #########################
 
 building_ult_zro_synthesizer = {
-	base_buildtime = 720
+	base_buildtime = @b5_time
+	planet_limit = 1
 
 	category = manufacturing
 
+	exempt_from_ai_planet_specialization = no
+	
 	building_sets = {
-		mining
 		industrial
+		factory
+		foundry
 	}
 	
 	potential = {
@@ -1744,17 +1895,35 @@ building_ult_zro_synthesizer = {
 		NOT = { has_modifier = slave_colony }
 	}
 	
+	planet_modifier = {
+		industrial_jobs_sr_zro_produces_add = 0.1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		planet_metallurgists_minerals_upkeep_add = 3
+		planet_artisans_minerals_upkeep_add = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = yes
+		}
+		planet_metallurgists_food_upkeep_add = 6
+		planet_artisans_food_upkeep_add = 6
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-		}
-		produces = {
-			sr_zro = 5
+			minerals = @b4_minerals
+			energy = @b3_minerals
 		}
 		upkeep = {
-			minerals = 30
-			energy = 30
+			minerals = 50
+			energy = 50
 		}
 	}
 	
@@ -1770,33 +1939,40 @@ building_ult_zro_synthesizer = {
 ############################
 
 building_ult_dark_matter_collector = {
-	base_buildtime = 720
+	base_buildtime = @b5_time
+	planet_limit = 1
 
-	category = manufacturing
+	category = resource
 
+	exempt_from_ai_planet_specialization = no
+	
 	building_sets = {
 		generator
-		industrial
 	}
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }	
-		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = resort_colony }
 	}
 	
+	planet_modifier = {
+		technician_jobs_sr_dark_matter_add = 0.1
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-		}
-		produces = {
-			sr_dark_matter = 5
+			minerals = @b4_minerals
+			energy = @b3_minerals
 		}
 		upkeep = {
-			energy = 50
+			energy = 120
 		}
 	}
 	
+	triggered_planet_modifier = {
+		technician_jobs_energy_upkeep_add = 6
+	}
+
 	prerequisites = {
 		"tech_ult_strategic_resources_production"
 	}
@@ -1809,13 +1985,17 @@ building_ult_dark_matter_collector = {
 ######################
 
 building_ult_nanites_synthesizer = {
-	base_buildtime = 720
+	base_buildtime = @b5_time
+	planet_limit = 1
 
 	category = manufacturing
 
+	exempt_from_ai_planet_specialization = no
+	
 	building_sets = {
-		mining
 		industrial
+		factory
+		foundry
 	}
 	
 	potential = {
@@ -1823,17 +2003,35 @@ building_ult_nanites_synthesizer = {
 		NOT = { has_modifier = slave_colony }
 	}
 	
+	planet_modifier = {
+		industrial_jobs_nanites_produces_add = 0.1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		planet_metallurgists_minerals_upkeep_add = 1.5
+		planet_artisans_minerals_upkeep_add = 1.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = yes
+		}
+		planet_metallurgists_food_upkeep_add = 1.5
+		planet_artisans_food_upkeep_add = 1.5
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
-		}
-		produces = {
-			nanites = 10
+			minerals = @b4_minerals
+			energy = @b3_minerals
 		}
 		upkeep = {
-			minerals = 30
-			energy = 30
+			minerals = 50
+			energy = 50
 		}
 	}
 	

@@ -10,9 +10,9 @@ tech_ult_ascending_way = {
 	weight = 20
 
 	modifier = {
-		country_unity_produces_mult = 0.20
-		country_edict_fund_add = 50
-		empire_size_pops_mult = -0.25
+		country_unity_produces_mult = 0.10
+		country_edict_fund_add = 25
+		empire_size_pops_mult = -0.1
 	}
 }
 
@@ -27,10 +27,10 @@ tech_ult_supreme_power = {
 	weight = 20
 
 	modifier = {
-		country_base_influence_produces_add = 1
-		country_edict_fund_add = 50
-		empire_size_systems_mult = -0.25
-		diplo_weight_mult = 0.2
+		country_base_influence_produces_add = 0.5
+		country_edict_fund_add = 25
+		empire_size_systems_mult = -0.1
+		diplo_weight_mult = 0.1
 	}
 }
 
@@ -45,7 +45,7 @@ tech_ult_ultimate_technology = {
 	weight = 20
 
 	modifier = {
-		all_technology_research_speed = 0.10
+		all_technology_research_speed = 0.05
 		num_tech_alternatives_add = 1
 	}
 }
@@ -62,7 +62,7 @@ tech_ult_geological_reconstruction = {
 	weight = 20
 	
 	modifier = {
-	  terraform_speed_mult = 0.50
+	  terraform_speed_mult = 0.25
 	  show_only_custom_tooltip = no
 	}
 	
@@ -86,9 +86,9 @@ tech_ult_ultimate_armies = {
 	weight = 10
 
 	modifier = {
-		army_damage_mult = 0.20
-		army_health = 0.20
-		command_limit_add = 270
+		army_damage_mult = 0.10
+		army_health = 0.10
+		command_limit_add = 120
 	}
 	
 	prereqfor_desc = {
@@ -112,11 +112,11 @@ tech_ult_ultimate_citadel = {
 	weight = 20
 
 	modifier = {
-		country_starbase_capacity_add = 5
-		starbase_upgrade_speed_mult = 1.00
-		starbase_defense_platform_capacity_add = 20
-		shipclass_military_station_damage_mult = 1.00
-		shipclass_military_station_hull_mult = 1.00
+		country_starbase_capacity_add = 3
+		starbase_upgrade_speed_mult = 0.50
+		starbase_defense_platform_capacity_add = 10
+		shipclass_military_station_damage_mult = 0.50
+		shipclass_military_station_hull_mult = 0.50
 	}
 	
 	prereqfor_desc = {
@@ -140,10 +140,10 @@ tech_ult_super_ai_network = {
 	weight = 20
 
 	modifier = {
-		planet_jobs_produces_mult = 0.10
-		empire_size_districts_mult = -0.25
-		empire_size_colonies_mult = -0.25
-		intel_decryption_add = 10
+		planet_jobs_produces_mult = 0.05
+		empire_size_districts_mult = -0.10
+		empire_size_colonies_mult = -0.10
+		intel_decryption_add = 3
 	}
 }
 
@@ -161,8 +161,8 @@ tech_ult_super_robot_enhance = {
 	weight = 20
 
 	modifier = {
-    ROBOT_species_trait_points_add = 4
-    planet_pop_assembly_mult = 0.20
+    ROBOT_species_trait_points_add = 3
+    planet_pop_assembly_mult = 0.10
 	}
 }
 
@@ -179,8 +179,8 @@ tech_ult_super_machine_enhance = {
 	weight = 20
 
 	modifier = {
-    MACHINE_species_trait_points_add = 4
-    planet_pop_assembly_mult = 0.20
+    MACHINE_species_trait_points_add = 3
+    planet_pop_assembly_mult = 0.10
 	}
 	
 	feature_flags = {
@@ -199,9 +199,9 @@ tech_ult_nano_drone_colony = {
 	weight = 60
 
 	modifier = {
-    ships_upkeep_mult = -0.20
-    megastructure_build_speed_mult = 0.25
-    planet_jobs_food_produces_mult = 0.20
+    ships_upkeep_mult = -0.10
+    megastructure_build_speed_mult = 0.15
+    planet_jobs_food_produces_mult = 0.10
 	}
 }
 
@@ -219,9 +219,9 @@ tech_ult_nano_drone_enhance = {
 	weight = 20
 
 	modifier = {
-    BIOLOGICAL_species_trait_points_add = 4
-    logistic_growth_mult = 0.1
-    leader_lifespan_add = 50
+    BIOLOGICAL_species_trait_points_add = 3
+    logistic_growth_mult = 0.05
+    leader_lifespan_add = 20
 	}
 	
 	feature_flags = {
@@ -240,9 +240,9 @@ tech_ult_molecular_manipulation = {
 	weight = 60
 
 	modifier = {
-		planet_jobs_upkeep_mult = -0.20
-		planet_artisans_produces_mult = 0.25
-		station_gatherers_produces_mult = 0.50
+		planet_jobs_upkeep_mult = -0.10
+		planet_artisans_produces_mult = 0.10
+		station_gatherers_produces_mult = 0.20
 	}
 }
 
@@ -257,9 +257,9 @@ tech_ult_ultra_compress = {
 	weight = 20
 
 	modifier = {
-		country_resource_max_add = 500000
-		ship_armor_mult = 0.50
-		ship_hull_mult = 0.25
+		country_resource_max_add = 100000
+		ship_armor_mult = 0.10
+		ship_hull_mult = 0.10
 	}
 }
 
@@ -294,7 +294,7 @@ tech_ult_control_dark_energy = {
 	weight = 60
 
 	modifier = {
-		planet_jobs_energy_produces_mult = 0.25
+		planet_jobs_energy_produces_mult = 0.10
 	}
 }
 
@@ -310,10 +310,9 @@ tech_ult_paradise_homeplanet = {
 	weight = 60
 
 	modifier = {
-		planet_max_buildings_add = 3
-		planet_building_build_speed_mult = 0.25
-		planet_jobs_upkeep_mult = -0.20
-		empire_size_districts_mult = -0.25
+		planet_building_build_speed_mult = 0.10
+		planet_jobs_upkeep_mult = -0.10
+		empire_size_districts_mult = -0.10
 	}
 	
 	prereqfor_desc = {
@@ -338,8 +337,8 @@ tech_ult_edenization = {
 	weight = 40
 
 	modifier = {
-	  terraforming_cost_mult = -0.25
-	  pop_environment_tolerance = 0.10
+	  terraforming_cost_mult = -0.10
+	  pop_environment_tolerance = 0.05
 	}
 	
 	prereqfor_desc = {
@@ -365,9 +364,9 @@ tech_ult_the_virtual_particles = {
 	weight = 20
 
 	modifier = {
-		add_base_country_intel = 20
-		intel_encryption_add = 20
-		station_researchers_produces_mult = 0.50
+		add_base_country_intel = 5
+		intel_encryption_add = 5
+		station_researchers_produces_mult = 0.20
 	}
 	prereqfor_desc = {
 		component = {
@@ -388,8 +387,8 @@ tech_ult_beyond_dimension = {
 	weight = 20
 
 	modifier = {
-		ship_shield_mult = 0.50
-		ship_evasion_add = 10
+		ship_shield_mult = 0.10
+		ship_evasion_add = 5
 	}
 }
 

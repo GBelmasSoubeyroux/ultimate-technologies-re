@@ -12,8 +12,8 @@ d_ult_gestalt_infrastructure = {
 	icon = d_ult_gestalt_infrastructure
 	
 	planet_modifier = {
-		planet_housing_add = 1000
-		planet_amenities_add = 5000
+		planet_housing_add = 800
+		planet_amenities_add = 4000
 	}
 	
 	triggered_planet_modifier = {
@@ -25,7 +25,7 @@ d_ult_gestalt_infrastructure = {
 		  NOT = { is_planet_class = pc_ringworld_habitable }
 	    }
 		modifier = {
-		  planet_max_districts_add = 5
+		  planet_max_districts_add = 3
 		  district_mining_max_add = 20
 		  district_farming_max_add = 20
 		  district_generator_max_add = 20
@@ -38,7 +38,7 @@ d_ult_gestalt_infrastructure = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 10
+			job_synapse_drone_add = @b2_jobs
 		}
 	}
 	
@@ -48,7 +48,7 @@ d_ult_gestalt_infrastructure = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {	
-			job_coordinator_add = 10
+			job_coordinator_add = @b2_jobs
 		}
 	}
 	
@@ -74,7 +74,7 @@ d_ult_utopia_infrastructure = {
 		  NOT = { is_planet_class = pc_ringworld_habitable }
 	    }
 		modifier = {
-		  planet_max_districts_add = 5
+		  planet_max_districts_add = 3
 		  district_mining_max_add = 10
 		  district_farming_max_add = 10
 		  district_generator_max_add = 10

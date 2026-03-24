@@ -1,7 +1,0 @@
-
-ambient_object = {
-	name = "ult_gaia_shield"
-	entity = "planet_shield_effect_entity"
-	selectable = no
-	show_name = no
-}

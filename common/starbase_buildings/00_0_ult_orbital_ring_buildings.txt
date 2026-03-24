@@ -9,20 +9,20 @@ ring_ult_super_complex = {
 	}
 
 	orbit_modifier = {
-		ship_orbit_upkeep_mult = -0.50
+		ship_orbit_upkeep_mult = -0.20
 	}
-	
+		
 	station_modifier = {
 		starbase_shipyard_capacity_add = 2
 	}
 	
 	ship_modifier = {
-		ship_starting_experience_add = 1000
+		ship_starting_experience_add = 200
 	}
 	
 	planet_modifier = {
-		planet_jobs_produces_mult = 0.10
-		planet_jobs_upkeep_mult = -0.10
+		planet_jobs_produces_mult = 0.05
+		planet_jobs_upkeep_mult = -0.05
 	}
 	
 	triggered_planet_modifier = {
@@ -32,27 +32,29 @@ ring_ult_super_complex = {
 			}
 		}
 		modifier = {
-			planet_jobs_trade_produces_mult = 0.10
+			planet_jobs_trade_produces_mult = 0.05
 		}
 	}
 	
 	system_modifier = {
-		planet_resettlement_unemployed_mult = 1.00
+		planet_resettlement_unemployed_mult = 0.50
 	}
 	
 	country_modifier = {
-		country_naval_cap_add = 100
-		country_resource_max_add = 30000
+		country_naval_cap_add = 20
+		country_resource_max_add = 5000
 	}
 
 	resources = {
 		category = starbase_buildings
 		cost = {
-			alloys = 1000
+			alloys = 2000
+			sr_dark_matter = 5
 		}
 
 		upkeep = {
-			energy = 10
+			energy = 20
+			sr_dark_matter = 0.5
 		}
 	}
 
@@ -76,37 +78,39 @@ ring_ult_matrix_defence = {
 	}
 
 	station_modifier = {
-		starbase_defense_platform_capacity_add = 20
-		ship_weapon_range_mult = 1.00
-		ship_hull_mult = 1.0
-		ship_armor_mult = 2.0
-		ship_shield_mult = 2.0
-		ship_armor_hardening_add = 1.0
-		ship_shield_hardening_add = 1.0
-		ship_cloaking_detection_add = 6
+		starbase_defense_platform_capacity_add = 10
+		ship_weapon_range_mult = 0.50
+		ship_hull_mult = 0.5
+		ship_armor_mult = 0.25
+		ship_shield_mult = 0.25
+		ship_armor_hardening_add = 0.33
+		ship_shield_hardening_add = 0.33
+		ship_cloaking_detection_add = 3
 	}
 	
 	defense_platform_modifier = {
-		ship_weapon_range_mult = 1.00
-		ship_hull_mult = 1.0
-		ship_armor_mult = 1.0
-		ship_shield_mult = 1.0
-		ship_armor_hardening_add = 1.0
-		ship_shield_hardening_add = 1.0
+		ship_weapon_range_mult = 0.50
+		ship_hull_mult = 0.5
+		ship_armor_mult = 0.25
+		ship_shield_mult = 0.25
+		ship_armor_hardening_add = 0.33
+		ship_shield_hardening_add = 0.33
 	}
 	
 	country_modifier = {
-		country_naval_cap_add = 100
+		country_naval_cap_add = 20
 	}
 
 	resources = {
 		category = starbase_buildings
 		cost = {
-			alloys = 500
+			alloys = 1000
+			sr_dark_matter = 5
 		}
 
 		upkeep = {
-			energy = 5
+			energy = 20
+			sr_dark_matter = 0.5
 		}
 	}
 	

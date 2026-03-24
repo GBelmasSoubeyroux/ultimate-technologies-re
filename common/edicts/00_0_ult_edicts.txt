@@ -15,14 +15,14 @@ ult_manifest_destiny = {
 		}
 	}
   modifier = {
-    country_unity_produces_mult = 0.20
-    logistic_growth_mult = 0.1
-    empire_size_pops_mult = -0.10
-    planet_colony_development_speed_mult = 0.50
-    planet_building_build_speed_mult = 0.50
-    country_leader_pool_size = 3
-    terraform_speed_mult = 0.25
-    megastructure_build_speed_mult = 0.25
+    country_unity_produces_mult = 0.10
+    logistic_growth_mult = 0.05
+    empire_size_pops_mult = -0.05
+    planet_colony_development_speed_mult = 0.25
+    planet_building_build_speed_mult = 0.25
+    country_leader_pool_size = 2
+    terraform_speed_mult = 0.10
+    megastructure_build_speed_mult = 0.10
   }
   prerequisites = { "tech_ult_ascending_way" }
   
@@ -43,14 +43,14 @@ ult_supreme_power = {
 		}
 	}
   modifier = {
-    pop_government_ethic_attraction = 0.75
-    diplo_weight_mult = 0.20
-    intel_encryption_add = 3
+    pop_government_ethic_attraction = 0.33
+    diplo_weight_mult = 0.10
+    intel_encryption_add = 2
     starbase_shipyard_build_speed_mult = 0.10
-    starbase_upgrade_speed_mult = 0.50
-    country_naval_cap_mult = 0.10
-    ships_upkeep_mult = -0.20
-    army_damage_mult = 0.20
+    starbase_upgrade_speed_mult = 0.25
+    country_naval_cap_mult = 0.05
+    ships_upkeep_mult = -0.10
+    army_damage_mult = 0.10
   }
   prerequisites = { "tech_ult_supreme_power" }
 
@@ -72,12 +72,12 @@ ult_technology_rise = {
 		}
 	}
   modifier = {
-    all_technology_research_speed = 0.25
+    all_technology_research_speed = 0.10
     num_tech_alternatives_add = 1
-    planet_researchers_produces_mult = 0.25
-    species_leader_exp_gain = 0.50
-    science_ship_survey_speed = 0.50
-    ship_anomaly_research_speed_mult = 0.50
+    planet_researchers_produces_mult = 0.10
+    species_leader_exp_gain = 0.25
+    science_ship_survey_speed = 0.25
+    ship_anomaly_research_speed_mult = 0.25
   }
   prerequisites = { "tech_ult_ultimate_technology" }
 

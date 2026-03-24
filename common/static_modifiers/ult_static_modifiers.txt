@@ -18,23 +18,23 @@ ult_utopia_infrastructure_ecu = {
 }
 
 ult_utopia_infrastructure_hab = {
-  planet_building_build_speed_mult = 0.20
-  planet_buildings_upkeep_mult = -0.20
+  planet_building_build_speed_mult = 0.10
+  planet_buildings_upkeep_mult = -0.10
   planet_amenities_add = 5000
   icon = "gfx/interface/icons/planet_modifiers/pm_ult_utopia_infrastructure.dds"
 	icon_frame = 1
 }
 
 ult_utopia_infrastructure_rw = {
-  planet_building_build_speed_mult = 0.20
-  planet_buildings_upkeep_mult = -0.20
+  planet_building_build_speed_mult = 0.10
+  planet_buildings_upkeep_mult = -0.10
   planet_amenities_add = 10000
   icon = "gfx/interface/icons/planet_modifiers/pm_ult_utopia_infrastructure.dds"
 	icon_frame = 1
 }
 
 ult_temporary_settlement = {
-  planet_building_build_speed_mult = 0.25
+  planet_building_build_speed_mult = 0.10
   planet_housing_add = 5000
   planet_pops_unemployed_consumer_goods_upkeep_add = 2
   
@@ -43,11 +43,11 @@ ult_temporary_settlement = {
 }
 
 ult_architecture_optimize = {
-  planet_building_build_speed_mult = 0.25
-  planet_buildings_upkeep_mult = -0.25
-  planet_jobs_produces_mult = 0.25
-  planet_jobs_upkeep_mult = -0.25
-  planet_amenities_add = 10000
+  planet_building_build_speed_mult = 0.10
+  planet_buildings_upkeep_mult = -0.10
+  planet_jobs_produces_mult = 0.10
+  planet_jobs_upkeep_mult = -0.10
+  planet_amenities_add = 5000
   
   icon = "gfx/interface/icons/planet_modifiers/pm_ult_architecture_optimize.dds"
 	icon_frame = 1
@@ -56,9 +56,9 @@ ult_architecture_optimize = {
 ult_gaia_shield_activating = {
   planet_orbital_bombardment_damage = -1.50
   planet_storm_devastation_mult = -1.50
-  army_defense_health_mult = 1.0
+  army_defense_health_mult = 0.50
   planet_jobs_upkeep_mult = 0.50
-  country_base_energy_produces_add = -50
+  country_base_energy_produces_add = -100
   
   icon = "gfx/interface/icons/planet_modifiers/pm_ult_gaia_shield_activating.dds"
 	icon_frame = 2
@@ -70,7 +70,7 @@ ult_gaia_shield_recharging = {
 }
 
 ult_organic_pop_assembly = {
-  bonus_pop_growth = 10
+  bonus_pop_growth = 5
   country_base_food_produces_add = -30
   
   icon = "gfx/interface/icons/planet_modifiers/pm_ult_organic_pop_assembly.dds"
@@ -78,7 +78,7 @@ ult_organic_pop_assembly = {
 }
 
 ult_robot_pop_assembly = {
-  planet_pop_assembly_add = 10
+  planet_pop_assembly_add = 5
   country_base_alloys_produces_add = -10
   
   icon = "gfx/interface/icons/planet_modifiers/pm_ult_robot_pop_assembly.dds"

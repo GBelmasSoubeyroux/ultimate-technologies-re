@@ -30,14 +30,15 @@ district_ult_ecu_utopia_arcology = {
 		}
 		upkeep = {
 			energy = 5
+			rare_crystals = 1
 		}		
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 6000
+		planet_housing_add = 4000
 		job_bureaucrat_add = 200
 		job_healthcare_add = 200
-		planet_amenities_add = 3000
+		planet_amenities_add = 1500
 	}
 
 	triggered_planet_modifier = {
@@ -105,14 +106,15 @@ district_ult_ecu_utopia_trade = {
 		}
 		upkeep = {
 			energy = 5
+			rare_crystals = 1
 		}		
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 3000
-		job_trader_add = 200
-		job_entertainer_add = 100
-		planet_amenities_add = 1500
+		planet_housing_add = 2000
+		job_trader_add = 250
+		job_entertainer_add = 50
+		planet_amenities_add = 800
 	}
 
 	triggered_planet_modifier = {
@@ -179,13 +181,14 @@ district_ult_ecu_utopia_consumer_goods = {
 		}
 		upkeep = {
 			energy = 5
+			volatile_motes = 1
 		}		
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 3000
+		planet_housing_add = 2500
 		job_artisan_add = 400
-		planet_amenities_add = 1500
+		planet_amenities_add = 800
 	}
 
 	triggered_planet_modifier = {
@@ -252,12 +255,13 @@ district_ult_ecu_utopia_alloy = {
 		}
 		upkeep = {
 			energy = 5
+			volatile_motes = 1
 		}		
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 3000
-		planet_amenities_add = 1500
+		planet_housing_add = 2500
+		planet_amenities_add = 800
 		job_ult_atomic_assembler_add = 300
 	}
 
@@ -325,12 +329,13 @@ district_ult_ecu_utopia_research = {
 		}
 		upkeep = {
 			energy = 5
+			exotic_gases = 1
 		}		
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 3000
-		planet_amenities_add = 1500
+		planet_housing_add = 2500
+		planet_amenities_add = 800
 		job_physicist_add = 200
 		job_biologist_add = 200
 		job_engineer_add = 200

@@ -172,6 +172,7 @@ decision_ult_utopia_infrastructure = {
 		cost = {
 			minerals = 5000
 			energy = 5000
+			alloy = 1000
 		}
 	}
 	
@@ -220,6 +221,7 @@ decision_ult_utopia_infrastructure_ecu = {
 		cost = {
 			minerals = 10000
 			energy = 10000
+			alloy = 2000
 		}
 	}
 	
@@ -266,6 +268,7 @@ decision_ult_utopia_infrastructure_hab = {
 		cost = {
 			minerals = 5000
 			energy = 5000
+			alloy = 1000
 		}
 	}
 	
@@ -309,6 +312,7 @@ decision_ult_utopia_infrastructure_rw = {
 		cost = {
 			minerals = 10000
 			energy = 10000
+			alloy = 2000
 		}
 	}
 	
@@ -455,6 +459,7 @@ decision_ult_architecture_optimize = {
 		cost = {
 			energy = 5000
 			minerals = 5000
+			alloy = 1000
 		}
 	}
 	
@@ -493,6 +498,7 @@ decision_ult_geological_reconstruction = {
 			}
 			energy = 8000
 			minerals = 8000
+			alloy = 1000
 		}
 		cost = {
 			trigger = {
@@ -501,6 +507,7 @@ decision_ult_geological_reconstruction = {
 			}
 			energy = 4000
 			minerals = 4000
+			alloy = 500
 		}
 		cost = {
 			trigger = {
@@ -509,6 +516,7 @@ decision_ult_geological_reconstruction = {
 			}
 			energy = 2000
 			minerals = 2000
+			alloy = 250
 		}
 	}
 	
@@ -558,8 +566,8 @@ decision_ult_geological_reconstruction_01 = {
 	resources = {
 		category = decisions
 		cost = {
-			energy = 500
-			minerals = 500
+			energy = 1000
+			minerals = 1000
 		}
 	}
 	

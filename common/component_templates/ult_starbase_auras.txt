@@ -25,11 +25,11 @@ utility_component_template = {
 		}
 		
 		modifier = {
-			ship_fire_rate_mult = -0.50
-			ship_weapon_range_mult = -0.50
-			ship_shield_mult = -0.50
-			ship_speed_mult = -0.50
-			ship_disengage_chance_mult = -0.50
+			ship_fire_rate_mult = -0.20
+			ship_weapon_range_mult = -0.20
+			ship_shield_mult = -0.20
+			ship_speed_mult = -0.25
+			ship_disengage_chance_mult = -0.25
 		}
 		
 		graphics = {
@@ -54,12 +54,12 @@ utility_component_template = {
 		}
 
 		modifier = {
-			ship_fire_rate_mult = 0.25
-			ship_weapon_range_mult = 0.25
-			ship_shield_mult = 0.25
+			ship_fire_rate_mult = 0.10
+			ship_weapon_range_mult = 0.10
+			ship_shield_mult = 0.10
 			ship_disengage_chance_mult = 0.25
-			ship_shield_hardening_add = 0.50
-			ship_armor_hardening_add = 0.50
+			ship_shield_hardening_add = 0.20
+			ship_armor_hardening_add = 0.20
 		}
 
 		graphics = {

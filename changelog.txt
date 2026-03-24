@@ -1,0 +1,41 @@
+##General
+Most country or planet modifiers have been heavily nerfed by a factor 2 minimum from ANY sources
+(Mostly Research, Buildings, Edicts)
+
+## Starbases and Orbitals rings modules
+Cost and upkeep twice as much, provide half as much and now have a 0.5 dark matter upkeep
+
+## Districts
+Ecumonopolies and utopian ecu districts now have a corresponding rare ressource upkeep and provide less housing and amnities (max 2/3 to min 1/6 less)
+Habitats districts now have higher energy upkeep up to x10 or have been introduced in some cases
+
+## Building
+Planet modifiers building are now limited to only one per planet
+Added a rare ressource cost and upkeep
+Most building cost more or less depending if it contains a planet modifier
+Build time and basic ressource upkeep are overall increased
+
+# Basic ressource buildings
+Now produces ressources and jobs are now all aligned to FE buildings (except jobs for modifiers buildings)
+
+#Advanced ressource building (motes, exotic, crystals, zro, living metal, nanites)
+Now are dedicated for industries districts
+Now limited to only one per planet
+Doesn't produce ressource anymore
+Change industrialist jobs to produce the advanced ressource in exchange of an increased upkeep (more for motes, exotic and crystals)
+Minerals cost increase, introducing an energy cost, no change to upkeep
+No rare ressource upkeep (as original mod)
+
+# Advanced ressource building for dark matter
+Same as above but now is dedicated for generator district with an high energy upkeep and modify technician jobs instead
+
+## Decisions / Deposits
+Major decisions now cost additional alloys
+Utopian infrastructure max district 5 -> 3
+
+Utopian infrastructure for Gestalts only :
+Unity jobs are fixed to 400 instead of 10 (probably a bug in original mod)
+Housing and amnities has been reduced by 1/5
+
+## Terraforming
+Terraforming out of molten and toxic world cost 4 times more
